@@ -1,0 +1,68 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #2c3e50, #3498db); /* Professional gradient */
+    color: #fff; /* White text for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #ecf0f1; /* Light text for headings */
+    font-weight: 600;
+}
+
+button {
+    background-color: #2980b9; /* More sophisticated button color */
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+button:hover {
+    background-color: #1f6593; /* Slightly darker hover state */
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increased shadow on hover */
+}
+
+button:active {
+    background-color: #1a5276; /* Darker active state */
+    transform: scale(1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Reduced shadow when active */
+}
+
+#myimg {
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ecf0f1; /* Subtle border to match the theme */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Soft shadow for image */
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards; /* Longer fadeIn animation for a smoother effect */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Start slightly below */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Finish at normal position */
+    }
+}
